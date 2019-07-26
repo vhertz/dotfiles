@@ -45,3 +45,5 @@ set clipboard+=unnamed
 set clipboard+=autoselect
 " make backspace work like most other programs
 set backspace=2
+" command-line completion operates in an enhanced mode
+set wildmenu
