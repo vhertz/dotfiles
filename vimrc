@@ -53,4 +53,5 @@ set wildmenu
 set formatoptions+=mM
 set textwidth=80
 " set colorscheme
+set background=dark
 colorscheme iceberg
