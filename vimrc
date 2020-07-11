@@ -10,6 +10,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/nerdcommenter'
+Plugin 'valloric/youcompleteme'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'scrooloose/syntastic'
+Plugin 'lervag/vimtex'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -35,6 +40,8 @@ set laststatus=2
 set showtabline=2
 " always show line number
 set number
+" always show cursor line
+set cursorline
 " start syntax highlighting
 syntax on
 " tab/indent settings
@@ -55,3 +62,9 @@ set textwidth=80
 " set colorscheme
 set background=dark
 colorscheme iceberg
+
+"
+" vim-easy-align
+"
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
