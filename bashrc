@@ -1,5 +1,5 @@
 # Set locale
-export LC_ALL="ja_JP.UTF-8"
+export LANG="en_US.UTF-8"
 
 # Define a utility function for adding PATH
 addPath() {

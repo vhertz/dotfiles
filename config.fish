@@ -1,5 +1,5 @@
 # set locale
-set -x LC_ALL "ja_JP.UTF-8"
+set -x LANG "en_US.UTF-8"
 
 # function to add path
 function add_path
