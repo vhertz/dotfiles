@@ -100,3 +100,5 @@ zsdoc/data
 !/tests/_output/.gitkeep
 
 # End of https://www.gitignore.io/api/vim,zsh,linux,macos
+
+/tmux/plugins/*
