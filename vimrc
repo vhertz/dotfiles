@@ -10,11 +10,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'preservim/nerdcommenter'
-Plugin 'valloric/youcompleteme'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'scrooloose/syntastic'
-Plugin 'lervag/vimtex'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,8 +40,8 @@ set cursorline
 " start syntax highlighting
 syntax on
 " tab/indent settings
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set cindent
 " settings for yank to clipboard
@@ -58,13 +53,8 @@ set backspace=2
 set wildmenu
 " wrap text at column 80
 set formatoptions+=mM
-set textwidth=80
+set textwidth=79
 " set colorscheme
 set background=dark
-colorscheme iceberg
+colorscheme gruvbox
 
-"
-" vim-easy-align
-"
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
