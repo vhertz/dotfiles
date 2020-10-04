@@ -56,7 +56,7 @@ if ($^O eq 'MSWin32') { # for Windows
 
     if ($^O eq 'darwin') { # for macOS
         $pvc_view_file_via_temporary = 0;
-        $pdf_previewer               = 'open -ga /Applications/Skim.app';
+        $pdf_previewer = '';
     } else { # for Linux
         $pdf_previewer = 'xdg-open';
     }
