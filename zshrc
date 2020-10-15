@@ -15,9 +15,9 @@ fi
 
 # common aliases
 if [ "$(uname)" = "Darwin" ]; then
-    alias ls="ls -GF"
+    alias ls="ls -G"
 else
-    alias ls="ls --color=auto -F"
+    alias ls="ls --color=auto"
 fi
 alias ll="ls -l"
 alias la="ls -a"

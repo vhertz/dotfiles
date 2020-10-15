@@ -24,9 +24,9 @@ end
 
 # common aliases
 if test (uname) = "Darwin"
-    alias ls="ls -GF"
+    alias ls="ls -G"
 else
-    alias ls="ls --color=auto -F"
+    alias ls="ls --color=auto"
 end
 alias ll="ls -l"
 alias la="ls -a"
