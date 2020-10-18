@@ -44,6 +44,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set cindent
+" settings for search
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
 " settings for yank to clipboard
 set clipboard+=unnamed
 set clipboard+=autoselect
