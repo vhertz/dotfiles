@@ -40,8 +40,8 @@ set cursorline
 " start syntax highlighting
 syntax on
 " tab/indent settings
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set cindent
 " settings for yank to clipboard
