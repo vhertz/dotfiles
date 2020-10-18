@@ -1,11 +1,17 @@
 #!/usr/bin/env perl
 
+#
+# 参考元
+#   - https://qiita.com/popunbom/items/7d02fc75ad23b735d28c
+#   - https://texwiki.texjp.org/?Latexmk
+#
+
 if ($^O eq 'MSWin32') { # for Windows
     
     # set commands
     $latex     = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
     $pdflatex  = 'pdflatex %O -synctex=1 -interaction=nonstopmode %S';
-    $lualatex  = 'lualatex -cmdx %O -synctex=1 -interaction=nonstopmode %S';
+    $lualatex  = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
     $xelatex   = 'xelatex %O -no-pdf -synctex=1 -shell-escape -interaction=nonstopmode %S';
     $biber     = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
     $bibtex    = 'upbibtex %O %B';
