@@ -59,7 +59,4 @@ set wildmenu
 " wrap text at column 80
 set formatoptions+=mM
 set textwidth=79
-" set colorscheme
-set background=dark
-colorscheme gruvbox
 
