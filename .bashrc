@@ -1,19 +1,22 @@
-# Set locale
 export LANG="en_US.UTF-8"
 
-# Define a utility function for adding PATH
-addPath() {
+add_path() {
     if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
         PATH="${PATH:+"$PATH:"}$1"
     fi
 }
 
-# Load a local conf (.bashrc.local)
-if [ -e "${HOME}/.bashrc.local" ]; then
-    source "${HOME}/.bashrc.local"
+# Source global definitions
+if [ -f "/etc/bashrc" ]; then
+	. "/etc/bashrc"
 fi
 
-# common aliases
+# Load local definitions
+if [ -f "${HOME}/.bashrc.local" ]; then
+    . "${HOME}/.bashrc.local"
+fi
+
+# Set common aliases
 if [ "$(uname)" = "Darwin" ]; then
     alias ls="ls -G"
 else
