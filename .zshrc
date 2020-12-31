@@ -1,19 +1,17 @@
-# Set locale
 export LANG="en_US.UTF-8"
 
-# Define a utility function for adding PATH
 addPath() {
     if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
         PATH="${PATH:+"$PATH:"}$1"
     fi
 }
 
-# Load a local conf (.zshrc.local)
-if [ -e "${HOME}/.zshrc.local" ]; then
-    source "${HOME}/.zshrc.local"
+# Load local definitions
+if [ -f "${HOME}/.zshrc.local" ]; then
+    . "${HOME}/.zshrc.local"
 fi
 
-# common aliases
+# Set common aliases
 if [ "$(uname)" = "Darwin" ]; then
     alias ls="ls -G"
 else
