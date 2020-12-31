@@ -1,0 +1,9 @@
+.bashrc
+.zshrc
+.config/fish/config.fish
+.latexmkrc
+.tmux
+.tmux.conf
+.vim
+.vimrc
+.zshrc
