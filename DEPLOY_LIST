@@ -1,9 +1,12 @@
 .bashrc
 .zshrc
 .config/fish/config.fish
+.config/git/config
+.config/git/ignore
 .latexmkrc
 .tmux
 .tmux.conf
 .vim
 .vimrc
 .zshrc
+

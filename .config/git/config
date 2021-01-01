@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+[user]
+	name = vhertz
+	email = v3hertz@gmail.com
+[merge]
+	ff = false
+[pull]
+	ff = only
