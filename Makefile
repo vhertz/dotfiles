@@ -19,7 +19,8 @@ clean: 	## Remove the symlinks.
 	@$(foreach val, $(DOTFILES), rm -iv $(HOME)/$(val);)
 	@echo "[*] Remove completed."
 
-init:	## 
+init:	## Initialize to deploy the dotfiles.
+	@git submodule update -i
 	@echo "[*] Initialzation started."
 	@$(foreach val, $(DOTFILES), ./etc/init.sh $(dir $(HOME)/$(val));)
 	@echo "[*] Initialzation completed."
