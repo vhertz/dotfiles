@@ -20,8 +20,10 @@ clean: 	## Remove the symlinks.
 
 init:	## Initialize to deploy the dotfiles.
 	@echo "[*] Initialzation started."
-	@git submodule update -i
-	@$(foreach val, $(DOTFILES), ./etc/init.sh $(dir $(HOME)/$(val));)
+	@echo "[+] Initialize submodules."
+	git submodule update -i
+	@echo "[+] Create directories to deploy the dotfiles."
+	@$(foreach val, $(DOTFILES), $(DOTFILES_DIR)/etc/init.sh $(HOME)/$(val);)
 	@echo "[*] Initialzation completed."
 
 help:
