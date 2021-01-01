@@ -59,4 +59,3 @@ set wildmenu
 " wrap text at column 80
 set formatoptions+=mM
 set textwidth=79
-
