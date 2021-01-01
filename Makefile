@@ -6,12 +6,11 @@ DOTFILES		:= $(shell cat $(DEPLOY_LIST))
 all:
 
 list: 	## Show the dotfiles to deploy.
-	@echo "[*] `make deploy` deploys these files and directories:"
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
 
 deploy: ## Create symlink to the dotfiles.
-	@echo "[*] Deploy the dotfiles to the home directory."
-	@$(foreach val, $(DOTFILES), ln -sinv $(DOTFILES_DIR)/$(val) $(HOME)/$(val);)
+	@echo "[*] Deploy the dotfiles to your home directory."
+	@$(foreach val, $(DOTFILES), ln -sfnv $(DOTFILES_DIR)/$(val) $(HOME)/$(val);)
 	@echo "[*] Deployment completed."
 
 clean: 	## Remove the symlinks.
