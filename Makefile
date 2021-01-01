@@ -10,7 +10,7 @@ list: 	## Show the dotfiles to deploy.
 
 deploy: ## Create symlink to the dotfiles.
 	@echo "[*] Deploy the dotfiles to your home directory."
-	@$(foreach val, $(DOTFILES), ln -sfnv $(DOTFILES_DIR)/$(val) $(HOME)/$(val);)
+	@$(foreach val, $(DOTFILES), $(DOTFILES_DIR)/etc/deploy.sh $(DOTFILES_DIR)/$(val) $(HOME)/$(val);)
 	@echo "[*] Deployment completed."
 
 clean: 	## Remove the symlinks.
