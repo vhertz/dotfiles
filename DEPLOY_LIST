@@ -4,8 +4,6 @@
 .config/git/config
 .config/git/ignore
 .latexmkrc
-.tmux
-.tmux.conf
 .vim
 .vimrc
 
