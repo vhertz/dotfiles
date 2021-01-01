@@ -15,7 +15,7 @@ deploy: ## Create symlink to the dotfiles.
 
 clean: 	## Remove the symlinks.
 	@echo "[*] Remove symlinks in your home directory."
-	@$(foreach val, $(DOTFILES), rm -iv $(HOME)/$(val);)
+	@$(foreach val, $(DOTFILES), $(DOTFILES_DIR)/etc/clean.sh $(HOME)/$(val);)
 	@echo "[*] Remove completed."
 
 init:	## Initialize to deploy the dotfiles.
