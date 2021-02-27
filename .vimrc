@@ -25,6 +25,3 @@ set clipboard+=autoselect
 set backspace=2
 " command-line completion operates in an enhanced mode
 set wildmenu
-" wrap text at column 80
-set formatoptions+=mM
-set textwidth=79
