@@ -1,11 +1,5 @@
 export LANG="en_US.UTF-8"
 
-add_path() {
-    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
-        PATH="${PATH:+"$PATH:"}$1"
-    fi
-}
-
 # Load local definitions
 if [ -f "${HOME}/.zshrc.local" ]; then
     . "${HOME}/.zshrc.local"

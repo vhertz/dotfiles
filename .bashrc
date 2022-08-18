@@ -1,11 +1,5 @@
 export LANG="en_US.UTF-8"
 
-add_path() {
-    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
-        PATH="${PATH:+"$PATH:"}$1"
-    fi
-}
-
 # Source global definitions
 if [ -f "/etc/bashrc" ]; then
 	. "/etc/bashrc"
