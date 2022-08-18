@@ -17,4 +17,3 @@ if [ -e "$DEPLOY_DST" ]; then
 else
     ln -snv "$DEPLOY_SRC" "$DEPLOY_DST"
 fi
-
