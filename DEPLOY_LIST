@@ -1,8 +1,6 @@
 .bashrc
 .zshrc
-.config/fish/config.fish
 .config/git/config
 .config/git/ignore
 .latexmkrc
 .vimrc
-
