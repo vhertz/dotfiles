@@ -25,3 +25,5 @@ set clipboard+=autoselect
 set backspace=2
 " command-line completion operates in an enhanced mode
 set wildmenu
+" set colorscheme
+colorscheme elflord
