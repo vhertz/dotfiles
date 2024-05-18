@@ -100,3 +100,6 @@ zsdoc/data
 !/tests/_output/.gitkeep
 
 # End of https://www.gitignore.io/api/vim,zsh,linux,macos
+
+# DEPLOY_LIST is a LOCAL list of dotfiles to deploy
+/DEPLOY_LIST
