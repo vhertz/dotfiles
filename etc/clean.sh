@@ -1,12 +1,19 @@
-#!/bin/sh
+#!/bin/bash
+set -euo pipefail
 
-if [ -e "$1" ]; then
-    if [ -L "$1" ]; then
-        rm -iv "$1"
+REMOVE_TARGET="${1}"
+SCRIPT_NAME=$(basename "${0}")
+
+# check the existence of the target file
+if [ -e "${REMOVE_TARGET}" ]; then
+    # check whether the target file is a symbolic link
+    if [ -L "${REMOVE_TARGET}" ]; then
+        # remove the symbolic link
+        rm -iv "${REMOVE_TARGET}"
     else
-        printf "[+] We won't remove %s bacause this file is not a symbolic link.\n"\
-               "$1"
+        printf "[${SCRIPT_NAME}] We won't remove %s bacause this file is not a symbolic link.\n"\
+               "${REMOVE_TARGET}"
     fi
 else
-    printf "[+] %s doesn't exist.\n" "$1"
+    printf "[${SCRIPT_NAME}] %s doesn't exist.\n" "${REMOVE_TARGET}"
 fi
