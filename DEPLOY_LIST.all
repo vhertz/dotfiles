@@ -2,6 +2,7 @@
 .zshrc
 .config/git/config
 .config/git/ignore
+.config/nvim
 .latexmkrc
 .vimrc
 .tmux.conf
