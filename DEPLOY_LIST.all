@@ -3,6 +3,7 @@
 .config/git/config
 .config/git/ignore
 .config/nvim
+.config/fish
 .latexmkrc
 .vimrc
 .tmux.conf
