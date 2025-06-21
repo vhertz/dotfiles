@@ -12,7 +12,7 @@ if [ -e "${DEPLOY_DST}" ]; then
     # check whether the target file is a symbolic link
     if [ -L "${DEPLOY_DST}" ]; then
         # Ask users whether we can overwrite the symlink
-        ln -snvi "${DEPLOY_SRC}" "${DEPLOY_DST}"
+        ln -snvi "${DEPLOY_SRC}" "${DEPLOY_DST}" || true
     else
         # Save the original files by appending the "*.dotbak" suffix.
         printf "[${SCRIPT_NAME}] Rename %s to %s.dotbak\n" "${DEPLOY_DST}" "${DEPLOY_DST}"
